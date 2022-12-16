@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: Roboto Raleway;
+  font-family: 'Roboto', sans-serif;
   color: var(--color-text-main);
 }
 
@@ -30,42 +30,23 @@ body {
 .logo {
   color: var(--brand-color);
   font-family: 'Raleway';
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
-  line-height: 21px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-decoration: none;
 }
 .logo-header {
   color: #2e2f42;
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 .logo-footer {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #f4f4fd;
 }
 /* Навігація */
 .site-nav .link {
   color: #2e2f42;
   text-decoration: none;
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
   letter-spacing: 0.02em;
 }
 .site-nav .link:hover {
@@ -81,23 +62,18 @@ body {
 .contacts-header .link {
   color: #434455;
   text-decoration: none;
-  font-family: 'Roboto';
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
   letter-spacing: 0.02em;
 }
 
-.contacts-header .link:hover {
-  color: #4d5ae5;
+.contacts-header .link:hover,
+.contacts-header .link:focus  {
+  color: var(--brand-color);
 }
 
+
+
 /* Контент */
-
-
-
-
 
 .team-background {
   background-color: #f4f4fd;
@@ -109,6 +85,9 @@ body {
 }
 .hero-title {
   color: #ffffff;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: 0.02em;
 }
 .hero-btn {
   width: 170px;
@@ -120,10 +99,8 @@ body {
   cursor: pointer;
   /* для тексту */
   font-family: 'Roboto';
-  font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  line-height: 19px;
   color: #ffffff;
 }
 .hero-btn:hover,
@@ -142,26 +119,17 @@ body {
 
 /* Заголовки і текст секцій */
 .section .title {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 600;
   font-size: 20px;
-  line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--color-title-background);
 }
 .section .text {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--color-text-main);
 }
 
 .section > .title {
-  font-weight: 600;
   font-size: 36px;
   line-height: 40px;
 }
@@ -172,11 +140,11 @@ body {
   background-color: var(--color-title-background);
 }
 
+.footer .link {
+  text-decoration: none;
+}
+
 .text-footer {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #e7e9fc;
@@ -186,10 +154,8 @@ body {
 
 .section .filter-btns {
   font-family: 'Roboto';
-  font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  line-height: 24px;
   letter-spacing: 0.04em;
   color: #4d5ae5;
 }
@@ -209,10 +175,9 @@ body {
   border-radius: 4px;
 }
 
-
 /* Портфоліо */
 
-.portfolio .link{
+.portfolio .link {
   text-decoration: none;
 }
 /* 
