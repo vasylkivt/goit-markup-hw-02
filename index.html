@@ -5,30 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Шапка -->
     <header>
       <!-- Головна Навігація -->
-      <nav class="site-nav">
-        <a class="logo" href="./index.html">Web<span class="logo-header">Studio</span></a>
-        <ul class="list">
-          <li><a class="link" href="./index.html">Studio</a></li>
-          <li><a class="link" href="./portfolio.html">Portfolio</a></li>
-          <li><a class="link" href="">Contacts</a></li>
+      <nav>
+        <a class="logo link" href="./index.html">Web<span class="logo-header">Studio</span></a>
+        <ul class="menu list">
+          <li class="menu-item"><a class="menu-link link" href="./index.html">Studio</a></li>
+          <li class="menu-item"><a class="menu-link link" href="./portfolio.html">Portfolio</a></li>
+          <li class="menu-item"><a class="menu-link link" href="">Contacts</a></li>
         </ul>
       </nav>
-      <address class="contacts-header">
-        <ul class="list">
-          <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
+      <address>
+        <ul class="contacts-header list">
+          <li class="contacts-header-item"><a class="contacts-header-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li class="contacts-header-item"><a class="contacts-header-link link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
         </ul>
       </address>
     </header>
@@ -41,32 +41,32 @@
       </section>
 
       <!--Основні переваги компаній-->
-      <section class="section">
+      <section class="company-benefits">
         <h2 class="title">company benefits</h2>
-        <ul class="list company-benefits">
-          <li>
-            <h3 class="title">Strategy</h3>
+        <ul class="list company-benefits-list">
+          <li class="company-benefits-item">
+            <h3 class="sub-title">Strategy</h3>
             <p class="text">
               Our goal is to identify the business problem to walk away with the perfect and
               creative solution.
             </p>
           </li>
-          <li>
-            <h3 class="title">Punctuality</h3>
+          <li class="company-benefits-item">
+            <h3 class="sub-title">Punctuality</h3>
             <p class="text">
               OBring the key message to the brand's audience for the best price within the shortest
               possible time.
             </p>
           </li>
-          <li>
-            <h3 class="title">Diligence</h3>
+          <li class="company-benefits-item">
+            <h3 class="sub-title">Diligence</h3>
             <p class="text">
               Research and confirm brands that present the strongest digital growth opportunities
               and minimize risk.
             </p>
           </li>
-          <li>
-            <h3 class="title">Technologies</h3>
+          <li class="company-benefits-item">
+            <h3 class="sub-title">Technologies</h3>
             <p class="text">
               ODesign practice focused on digital experiences. We bring forth a deep passion for
               problem-solving.
@@ -76,58 +76,58 @@
       </section>
 
       <!--Що ми виготовтяємо-->
-      <section class="section">
-        <h2 class="title">What are we doing</h2>
-        <ul class="list">
-          <li>
+      <section class="company-products">
+        <h2 class="title wat">What are we doing</h2>
+        <ul class="company-products-list list">
+          <li class="company-products-item">
             <img src="./images/our-work/work-1.jpg" alt="img2" width="360" height="300" />
           </li>
-          <li>
+          <li class="company-products-item">
             <img src="./images/our-work/work-2.jpg" alt="img3" width="360" height="300" />
           </li>
-          <li>
+          <li class="company-products-item">
             <img src="./images/our-work/work.jpg" alt="img1" width="360" height="300" />
           </li>
         </ul>
       </section>
 
       <!--Наша Команда -->
-      <section class="section team-background">
+      <section class="main-team">
         <h2 class="title">Our Team</h2>
-        <ul class="list our-team">
-          <li>
+        <ul class="list main-team-list">
+          <li class="main-team-item">
             <img
               src="./images/our-team/ProductDesigner.jpg"
               alt="Product Designer"
               width="264"
               height="260"
             />
-            <h3 class="title">Mark Guerrero</h3>
+            <h3 class="sub-title">Mark Guerrero</h3>
             <p class="text">Product Designer</p>
           </li>
-          <li>
+          <li class="main-team-item">
             <img
               src="./images/our-team/FrontendDeveloper.jpg"
               alt="Frontend Developer"
               width="264"
               height="260"
             />
-            <h3 class="title">Tom Ford</h3>
+            <h3 class="sub-title">Tom Ford</h3>
             <p class="text">Frontend Developer</p>
           </li>
-          <li>
+          <li class="main-team-item">
             <img src="./images/our-team/Marketing.jpg" alt="Marketing" width="264" height="260" />
-            <h3 class="title">Camila Garcia</h3>
+            <h3 class="sub-title">Camila Garcia</h3>
             <p class="text">Marketing</p>
           </li>
-          <li>
+          <li class="main-team-item">
             <img
               src="./images/our-team/UIDesigner.jpg"
               alt="UI Designer"
               width="264"
               height="260"
             />
-            <h3 class="title">Daniel Wilson</h3>
+            <h3 class="sub-title">Daniel Wilson</h3>
             <p class="text">UI Designer</p>
           </li>
         </ul>
@@ -135,7 +135,7 @@
     </main>
     <!-- Футер -->
     <footer class="footer">
-      <a href="./index.html" class="logo"
+      <a href="./index.html" class="logo link"
         ><span class="logo">Web</span><span class="logo-footer">Studio</span></a
       >
       <p class="text-footer">

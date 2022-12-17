@@ -9,6 +9,8 @@
 /* фон головний #2E2F42 */
 /* фон команда #F4F4FD */
 
+/*    */
+
 :root {
   --brand-color: #4d5ae5;
   --color-text-main: #434455;
@@ -18,10 +20,15 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--color-text-main);
+  letter-spacing: 0.02em;
 }
 
 .list {
   list-style: none;
+}
+
+.link {
+  text-decoration: none;
 }
 
 /* Шапка */
@@ -32,51 +39,43 @@ body {
   font-family: 'Raleway';
   font-weight: 800;
   font-size: 18px;
+  line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-decoration: none;
 }
 .logo-header {
-  color: #2e2f42;
+  color: var(--color-title-background);
 }
 .logo-footer {
   color: #f4f4fd;
 }
 /* Навігація */
-.site-nav .link {
-  color: #2e2f42;
-  text-decoration: none;
+.menu-link {
+  color: var(--color-title-background);
   font-weight: 600;
-  letter-spacing: 0.02em;
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
-  letter-spacing: 0.02em;
+.menu-link:hover,
+.menu-link:focus {
   color: var(--color-text-main);
 }
-.site-nav .link:active {
-  letter-spacing: 0.02em;
-  color: #4d5ae5;
-}
-
-/* Контакти */
-.contacts-header .link {
-  color: var(--color-text-main);
-  text-decoration: none;
-  font-style: normal;
-  letter-spacing: 0.02em;
-}
-
-.contacts-header .link:hover,
-.contacts-header .link:focus  {
+.menu-link:active {
   color: var(--brand-color);
 }
 
+/* Контакти */
+.contacts-header-link {
+  color: var(--color-text-main);
+  font-style: normal;
+}
 
+.contacts-header-link:hover,
+.contacts-header-link:focus {
+  color: var(--brand-color);
+}
 
 /* Контент */
 
-.team-background {
+.main-team {
   background-color: #f4f4fd;
 }
 
@@ -87,19 +86,15 @@ body {
 .hero-title {
   color: #ffffff;
   font-size: 56px;
-  line-height: 1;
-  letter-spacing: 0.02em;
+  line-height: 1.07; 
 }
 .hero-btn {
-  width: 170px;
-  height: 51px;
   background-color: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   letter-spacing: 0.04em;
   cursor: pointer;
   /* для тексту */
-  font-family: 'Roboto';
   font-weight: 600;
   font-size: 16px;
   color: #ffffff;
@@ -108,31 +103,24 @@ body {
 .hero-btn:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
-  letter-spacing: 0.04em;
 }
 
 .hero-btn:active {
   background-color: #404bbf;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  letter-spacing: 0.04em;
 }
 
 /* Заголовки і текст секцій */
-.section .title {
+.sub-title {
   font-size: 20px;
-  letter-spacing: 0.02em;
   color: var(--color-title-background);
 }
-.section .text {
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  
+.text {
+  line-height: 1.5; 
 }
 
-.section > .title {
+.title {
   font-size: 36px;
-  line-height: 1.1;
+  line-height: 1.11; 
 }
 
 /* Футер */
@@ -141,29 +129,28 @@ body {
   background-color: var(--color-title-background);
 }
 
-.footer .link {
+.footer {
   text-decoration: none;
 }
 
 .text-footer {
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  line-height: 1.5; 
   color: #e7e9fc;
 }
 
 /* Кнопки фільтра */
 
-.section .filter-btns {
+.filter-btns {
   font-family: 'Roboto';
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 0.04em;
   color: #4d5ae5;
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.section .filter-btns:hover,
-.section .filter-btns:focus {
+.filter-btns:hover,
+.filter-btns:focus {
   color: #ffffff;
   background-color: #4d5ae5;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
@@ -171,11 +158,9 @@ body {
   border-radius: 4px;
 }
 
-
 /* Портфоліо */
 
 .portfolio .link {
-  text-decoration: none;
 }
 /* 
 .portfolio .link:hover{
