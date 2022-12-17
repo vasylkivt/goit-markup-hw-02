@@ -15,11 +15,14 @@
   --brand-color: #4d5ae5;
   --color-text-main: #434455;
   --color-title-background: #2e2f42;
+  --color-white: #ffffff;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--color-text-main);
+  background-color: var(--color-white);
+  font-size: 16px;
   letter-spacing: 0.02em;
 }
 
@@ -29,6 +32,10 @@ body {
 
 .link {
   text-decoration: none;
+}
+
+.hidden-titles{
+  color: grey;
 }
 
 /* Шапка */
@@ -53,6 +60,8 @@ body {
 .menu-link {
   color: var(--color-title-background);
   font-weight: 600;
+  line-height: 1.5;
+  
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -66,6 +75,7 @@ body {
 .contacts-header-link {
   color: var(--color-text-main);
   font-style: normal;
+  line-height: 1.5;
 }
 
 .contacts-header-link:hover,
@@ -84,9 +94,10 @@ body {
   background-color: #2e2f42;
 }
 .hero-title {
-  color: #ffffff;
+  color: var(--color-white);
   font-size: 56px;
   line-height: 1.07; 
+  line-height: 1.5;
 }
 .hero-btn {
   background-color: var(--brand-color);
@@ -98,6 +109,7 @@ body {
   font-weight: 600;
   font-size: 16px;
   color: #ffffff;
+  line-height: 1.5;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -113,14 +125,17 @@ body {
 .sub-title {
   font-size: 20px;
   color: var(--color-title-background);
+  line-height: 1.5;
+  font-weight: 600;
 }
 .text {
   line-height: 1.5; 
 }
 
-.title {
+.section-title {
   font-size: 36px;
   line-height: 1.11; 
+  text-transform: capitalize;
 }
 
 /* Футер */
@@ -144,6 +159,7 @@ body {
   font-family: 'Roboto';
   font-weight: 600;
   font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: #4d5ae5;
   cursor: pointer;
