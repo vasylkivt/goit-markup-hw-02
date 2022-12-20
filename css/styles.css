@@ -1,29 +1,58 @@
-/* font color  */
-/* колір заголовків #2E2F42 */
-/* основний колір #434455 */
-/* колір лого, кнопок і ховер ефектів #4D5AE5  */
-/* колір тексту в футорі #E7E9FC , білий #FFFFFF  */
-/* колір лого в футорі #F4F4FD */
-
-/* background color */
-/* фон головний #2E2F42 */
-/* фон команда #F4F4FD */
-
-/*    */
+/* Стандартні Налаштування */
+/* html {
+    box-sizing: border-box;
+}
+*,
+::before,
+::after {
+    box-sizing: inherit;
+} */
 
 :root {
-  --accent-color: #4d5ae5;
-  --primary-text-color: #434455;
-  --primary-title-color:#2e2f42;
-  --color-white: #ffffff;
-  --primary-font: 'Roboto', sans-serif;
-  --secondary-font: 'Raleway', sans-serif;
+  --primary-accent-color: #4D5AE5;
+  --secondary-accent-color: #31D0AA;
+
+  --primary-text-color-dark: #434455;
+  --secondary-text-color-dark: #000000;
+
+  --primary-text-color-light: #E7E9FC;
+  --secondary-text-color-light: #ffffff;
+
+  --primary-title-color-dark: #2E2F42;
+  --secondary-title-color-dark: #000000;
+
+  --primary-title-color-light: #ffffff;
+  --secondary-title-color-light: #F4F4FD;
+
+  --primary-background-color-light: #ffffff;
+  --secondary-background-color-light: #F4F4FD;
+
+  --primary-background-color-dark: #2E2F42;
+  --secondary-background-color-dark: #000000;
+
+  --primary-font-title: 'Roboto', sans-serif;
+  --secondary-font-title:'Raleway', sans-serif;
+
+  --primary-font-text: 'Roboto', sans-serif;
+  /* --secondary-font-text: ; */
+
+  --outline-pri: 2px solid rgb(150, 255, 0);
+  --outline-seco: 2px solid rgb(255, 0, 0);
+
+  --background-pri: rgb(150, 150, 150);
+  --background-seco: rgb(200, 150, 100);
 }
 
+
+
+
+
+
+
 body {
-  font-family: var(--primary-font);
-  color: var(--primary-text-color);
-  background-color: var(--color-white);
+  font-family: var(--primary-font-text);
+  color: var(--primary-text-color-dark);
+  background-color: var(--primary-background-color-light);
   font-size: 16px;
   letter-spacing: 0.02em;
   
@@ -42,6 +71,16 @@ body {
 }
 
 /* ================== Компоненти ================== */
+      
+.container{
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline:var(--outline-pri) ;
+}
+
+
 .sub-title {
   font-size: 20px;
   color: var(--primary-title-color);
@@ -51,6 +90,8 @@ body {
 .text {
   line-height: 1.5;
 }
+
+
 .section-title {
   font-size: 36px;
   line-height: 1.11;
@@ -59,10 +100,15 @@ body {
 /* ================== /Компоненти ================== */
 
 /* ================== Шапка ================== */
+.header{
+  background-color: var(--color-white);
+}
+
 /* Логотип */
+
 .logo {
-  color: var(--accent-color);
-  font-family:var(--primary-font) ;
+  color: var(--primary-accent-color);
+  font-family:var(--secondary-font-title) ;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
@@ -70,67 +116,74 @@ body {
   text-transform: uppercase;
 }
 .logo-header {
-  color: var(--primary-title-color);
+  color: var(--primary-title-color-dark);
 }
 .logo-footer {
-  color: #f4f4fd;
+  color: var(--secondary-background-color-light);
 }
 /* Навігація */
 .menu-link {
-  color: var(--primary-title-color);
+  color: var(--primary-title-color-dark);
   font-weight: 600;
   line-height: 1.5;
 }
 /* .corrent{
-  color: var(--accent-color);
+  color: var(--primary-accent-color);
 } */
 .menu-link:hover,
 .menu-link:focus {
-  color: var(--primary-text-color);
+  color: var(--primary-text-color-dark);
 }
 .menu-link:active {
-  color: var(--accent-color);
+  color: var(--primary-accent-color);
 }
 /* Контакти */
 .contacts-header-link {
-  color: var(--primary-text-color);
+  color: var(--primary-text-color-dark);
   font-style: normal;
-  /* font-weight: 400; */
   line-height: 1.5;
 }
 .contacts-header-link:hover,
 .contacts-header-link:focus {
-  color: var(--accent-color);
+  color: var(--primary-accent-color);
 }
 /* ================== /Шапка ================== */
 
 
 /* ================== Контент ================== */
 .main-team {
-  background-color: #f4f4fd;
+  background-color: var(--secondary-background-color-light);
 }
+.company-benefits{
+  background-color: var(--primary-background-color-light);
+}
+
+.company-products{
+  background-color: var(--primary-background-color-light);
+}
+
 /* Hero Контент */
 .hero {
   background-color: #2e2f42;
 }
 .hero-title {
-  color: var(--color-white);
+  color: var(--primary-title-color-light);
   font-size: 56px;
   font-weight: 600;
   line-height: 1.07; 
 
 }
 .hero-btn {
-  background-color: var(--accent-color);
+  background-color: var(--primary-accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   letter-spacing: 0.04em;
   cursor: pointer;
   /* для тексту */
-  font-family: var(--primary-font);
+  font-family: var(--primary-font-title);
   font-weight: 600;
   font-size: 16px;
-  color: #ffffff;
+  color: var(--primary-title-color-light);
   line-height: 1.5;
 }
 .hero-btn:hover,
@@ -145,32 +198,35 @@ body {
 
 /* ================== Футер ================== */
 .footer {
-  background-color: var(--primary-title-color);
+  background-color: var(--primary-background-color-dark);
 }
-.footer {
-  text-decoration: none;
-}
+
 .text-footer {
   line-height: 1.5; 
-  color: #e7e9fc;
+  color: var(--primary-text-color-light);
 }
 /* ================== /Футер ================== */
 
 /* ================== Портфоліо ================== */
+
+.portfolio{
+  background-color: var(--primary-background-color-light);
+}
+
 /* Кнопки фільтра */
 .filter-btns {
-  font-family: var(--primary-font);
+  font-family: var(--primary-font-title);
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: var(--accent-color);
+  color: var(--primary-accent-color);
   cursor: pointer;
 }
 .filter-btns:hover,
 .filter-btns:focus {
   color: #ffffff;
-  background-color: var(--accent-color);
+  background-color: var(--primary-accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
